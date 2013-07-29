@@ -1,18 +1,39 @@
 <html>
 <head>
-  <title>It's me | Just another weblog</title>
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <style type="text/css">
-	#me_centered {
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		margin-top: -41px;
-		margin-left: -461px;
-	}
+	<title>It's me | Just another weblog</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<style type="text/css">
+		body {
+			background-color: #7C72DC;
+		}
+
+		html, body, #container { height: 100%; margin: 0; padding: 0; }
+		body > #container { height: auto; min-height: 100%; }
+
+		#c64_centered {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -210px;
+			margin-left: -335px;
+		}
+	
+		#footer{
+			position:fixed;
+			bottom:0;
+			left:50%;
+			margin-left:-461px; /*negative half the width */
+			width:922px;
+			height:82px;
+		}
+	
+ 
   </style>
 </head>
 <body>
-	<img src="img/me_commit.png" alt="It's me" id="me_centered">
+	<div id="container">
+		<img src="img/c64boot.gif" alt="c64 boot" id="c64_centered">
+	</div>
+	<img src="img/me_commit.png" alt="It's me" id="footer">
 </body>
 </html>
